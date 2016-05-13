@@ -1,0 +1,37 @@
+.menu {/* apply formatting to the menu here */
+	text-align: center; /* centers the menu */
+	
+}
+#active {/* apply formatting to the active menu item here, NOTE: this overrides the .menu class above */
+	font-weight: bold; /* bolds the active menu item */
+	text-decoration: none; /* turns off underlines.etc for the active menu item */
+	color: #000000; /* sets the color of the active link to black */
+	pointer-events: none; /* disables the link on the active menu item so users cant click the 'home' button when they are on the home page */
+   cursor: default; /* fallback for IE and Opera browsers, this changes the pointer to the default setting*/
+}
+/* unvisited link */
+nav a:link {
+    color: #000000; /* change normal link color for non-active links to black */
+    text-decoration: none;  /* turn off underlines.etc for non-active links */
+    font-weight: normal; /* un-bolds non-active links */
+}
+
+/* visited link */
+nav a:visited {
+    color: #000000; /* set the link color of visited links to black (keep this the same as the color property above so your menu does not look wierd when a link is clicked) */
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: #7a7a7a; /* set the color links will change to when they are moused-over */
+    text-decoration: none;
+    font-weight: normal;
+}
+/* selected link */
+nav a:active { /* i have absolutely no ideas what this does but i set it to the same thing as the nav a:link selector so it wont show up... */
+    color: #000000;
+     text-decoration: none;
+     font-weight: normal;
+}
